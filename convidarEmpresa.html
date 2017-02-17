@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://loginh.getsharing.com.br/" />
+<title>Convidar empresa</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Convidar empresa</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>http://www.geradorcnpj.com/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=geraCNPJ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>id=saida</td>
+	<td>Pegacnpj</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-email</td>
+	<td>filipess.2011@gmail.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-senha</td>
+	<td>12345678</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=button[title=&quot;Entrar&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=convida-usuario</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=convida-usuario</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=company</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>new Date().setDate( new Date().getDate() + 30)</td>
+	<td>date</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${date}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>d=new Date( new Date().getFullYear(), new Date().getMonth(), new Date().getDate() +30); d=d.getFullYear()</td>
+	<td>year</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${year}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>d=new Date( new Date().getFullYear(), new Date().getMonth(), new Date().getDate()&nbsp;&nbsp;+30); d=d.getMonth()</td>
+	<td>month</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${month}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>d=new Date( new Date().getFullYear(), new Date().getMonth(), new Date().getDate() + 30).getDate()</td>
+	<td>day</td>
+</tr>
+<tr>
+	<td>setTimeout</td>
+	<td></td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>d=new Date().getHours()+&quot; : &quot; + new Date().getMinutes() + &quot; : &quot; + new Date().getSeconds()</td>
+	<td>time</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=company</td>
+	<td>Teste Empresa- ${day}/${month}/${year} - ${time}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=cnpj</td>
+	<td>${Pegacnpj}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=option[value=&quot;375&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=FolderName</td>
+	<td>label=Banco de Currículos</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.convidar-usuario-multiple-select-icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[@value='1917']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=name</td>
+	<td>qa</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email</td>
+	<td>qa.veriz@gmail.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=confirmEmail</td>
+	<td>qa.veriz@gmail.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lastname</td>
+	<td>Veriz</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=phone</td>
+	<td>(11) 1111-11111</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=convidar-usuario-button-Convidar</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[@onclick='#']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>https://mail.google.com/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=choose-account-0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Passwd</td>
+	<td>Pass1Word</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=signIn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//td[5]/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>name=GetSharing</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>name=GetSharing</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=:6i</td>
+	<td>GetSharing - Nova empresa Teste Empresa- 17/9/2015 - 11 : 36 : 11</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[2]/div/div/div[2]/div/div/div/div/div/div/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div/span/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//div/div/div/div/div/div/div/div/div/div[2]/div[3]/div/div</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

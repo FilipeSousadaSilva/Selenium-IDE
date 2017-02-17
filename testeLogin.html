@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://login.getsharing.com.br/" />
+<title>Teste Login</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Teste Login</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-email</td>
+	<td>filipess.2011@gmail.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-senha</td>
+	<td>123mudar</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button[title=&quot;Entrar&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>https://login.getsharing.com.br/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-email</td>
+	<td>filipe@a.co</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-senha</td>
+	<td>Pass1Word</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button[title=&quot;Entrar&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=ul.msgErrors &gt; li</td>
+	<td>Nome de usuário ou senha incorreto</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-email</td>
+	<td>filipe.silva@jmail.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-senha</td>
+	<td>123mudar</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button[title=&quot;Entrar&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=ul.msgErrors &gt; li</td>
+	<td>Nome de usuário ou senha incorreto</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-email</td>
+	<td>filipess.2011@gmail.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-senha</td>
+	<td>Pass1Word</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button[title=&quot;Entrar&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=ul.msgErrors &gt; li</td>
+	<td>Senha incorreta. Por favor, insira a senha correta</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-senha</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button[title=&quot;Entrar&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=ul.msgErrors &gt; li</td>
+	<td>O campo Senha é necessário</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-senha</td>
+	<td>123</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button[title=&quot;Entrar&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=ul.msgErrors &gt; li</td>
+	<td>Sua senha deve ter no máximo 10 e no mínimo 8 caracteres</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-senha</td>
+	<td>123hgdhfddfg</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button[title=&quot;Entrar&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=ul.msgErrors &gt; li</td>
+	<td>Sua senha deve ter no máximo 10 e no mínimo 8 caracteres</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-email</td>
+	<td>graciela.arauj@veriz.com.br</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-senha</td>
+	<td>123mudar</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button[title=&quot;Entrar&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button[title=&quot;Entrar&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-email</td>
+	<td>graciela.arauj@verizd.com.br</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-senha</td>
+	<td>123hgdhg</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button[title=&quot;Entrar&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=ul.msgErrors &gt; li</td>
+	<td>Nome de usuário ou senha incorreto</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-email</td>
+	<td>qa.veriz@gmail.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-senha</td>
+	<td>123hgdhg</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button[title=&quot;Entrar&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button[title=&quot;Entrar&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button[title=&quot;Entrar&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button[title=&quot;Entrar&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=ul.msgErrors &gt; li</td>
+	<td>Esta conta foi bloqueada por excesso de tentativas erradas. Um e-mail foi enviado para sua conta para que possa desbloqueá-la</td>
+</tr>
+</tbody></table>
+</body>
+</html>

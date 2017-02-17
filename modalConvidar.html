@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://loginh.getsharing.com.br/" />
+<title>Modal - Convidar</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Modal - Convidar</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-email</td>
+	<td>filipe.ss2011@gmail.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-senha</td>
+	<td>123mudar</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button[title=&quot;Entrar&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=strong</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=strong</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=nomeConvidado</td>
+	<td>Filipe Teste </td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=emailConvidado</td>
+	<td>qa.veri.z@gmail.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=MensagemConvidado</td>
+	<td>teste</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=sendEmailInvite</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>https://accounts.google.com/ServiceLogin?service=mail&amp;passive=true&amp;rm=false&amp;continue=https://mail.google.com/mail/?tab%3Dwm&amp;scc=1&amp;ltmpl=default&amp;ltmplcache=2&amp;emr=1&amp;osid=1#identifier</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=choose-account-0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Passwd</td>
+	<td>Pass1Word</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=signIn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//td[5]/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[2]/p[2]</td>
+	<td>filipe sousa da empresa testefasdadfa lhe convida para conhecer o GetSharing, uma solução de gestão eletrônica de documentos, que permite armazenar, organizar, visualizar e compartilhar seus documentos de forma simples e segura, na nuvem!<br /> <br /> teste <br /> <br /> Experimente grátis: <br /> https://login.getsharing.com.br/comprar</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[2]/div/table/tbody/tr/td[2]/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//div/div/div/div/div/div/div/div/div/div[2]/div[3]/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[3]/div[2]/a</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

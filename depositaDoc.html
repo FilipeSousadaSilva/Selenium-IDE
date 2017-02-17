@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://login.getsharing.com.br/" />
+<title>Ale</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Ale</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>http://loginh.getsharing.com.br/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-email</td>
+	<td>filipess.2011@gmail.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=input-senha</td>
+	<td>12345678</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button[title=&quot;Entrar&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>new Date().setDate( new Date().getDate() + 30)</td>
+	<td>date</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${date}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>d=new Date( new Date().getFullYear(), new Date().getMonth(), new Date().getDate() +30); d=d.getFullYear()</td>
+	<td>year</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${year}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>d=new Date( new Date().getFullYear(), new Date().getMonth(), new Date().getDate()&nbsp;&nbsp;+30); d=d.getMonth()</td>
+	<td>month</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${month}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>d=new Date( new Date().getFullYear(), new Date().getMonth(), new Date().getDate() + 30).getDate()</td>
+	<td>day</td>
+</tr>
+<tr>
+	<td>setTimeout</td>
+	<td></td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>d=new Date().getHours()+&quot; : &quot; + new Date().getMinutes() + &quot; : &quot; + new Date().getSeconds()</td>
+	<td>time</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${time}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>setTimeout</td>
+	<td></td>
+	<td>20000</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=strong[title=&quot;Comercial&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>setTimeout</td>
+	<td></td>
+	<td>5000</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#btn-nova-providencia &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>setTimeout</td>
+	<td></td>
+	<td>5000</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>javascript: storedVars[&quot;teste&quot;]++;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td></td>
+	<td>5000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=nome-agrupador</td>
+	<td>Agrupador-${day}/${month}/${year}/${time}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=enviar</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=#btn-novo-documento &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#btn-novo-documento &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=nome-documento</td>
+	<td>Documento-${day}/${month}/${year}/${time}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=file</td>
+	<td>C:\Users\Veriz\Desktop\Teste_QA123.txt</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=depositar-documento</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
